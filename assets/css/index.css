@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Microsoft YaHei';
+}
+
+.pgwMenu {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.pgwMenu .pm-dropDown a {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0 10px;
+}
+
+.pgwMenu li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.pgwMenu a {
+    padding: 0 30px;
+}
+
+.pgwMenu a.selected {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.pgwMenu .pm-links.mobile, .pgwMenu .pm-viewMore > ul {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.pgwMenu .pm-dropDown a.active, .pgwMenu .pm-viewMore a.active {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#pp-nav li span,
+.pp-slidesNav span {
+    border-width: 2px;
+    width: 6px;
+    height: 6px;
+}
+
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+    border-color: #333;
+}
+
+.section {
+    background-size: cover;
+}

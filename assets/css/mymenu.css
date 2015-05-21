@@ -1,0 +1,73 @@
+/**
+ * mymenu - Version 1.0
+ *
+ * Copyright 2015, Loyal
+ * http://pgwjs.com - http://pagawa.com
+ *
+ * 
+ */
+ .pgwMenu {
+            background: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+        }
+
+            .pgwMenu .pm-dropDown a {
+                background: rgba(0, 0, 0, 0.5);
+                padding: 0 10px;
+            }
+
+            .pgwMenu li a:hover {
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .pgwMenu a {
+                padding: 0 25px;
+            }
+
+            .pgwMenu .pm-links.mobile, .pgwMenu .pm-viewMore > ul {
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .pgwMenu .pm-dropDown a.active, .pgwMenu .pm-viewMore a.active {
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+			.pgwMenu .pm-links .active a{
+				background: rgba(200, 200, 200, 0.5);
+				color:#333;
+			}
+
+		.pgwMenu.light {
+            background: rgba(255, 255, 255, 0.5);
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+        }
+
+            .pgwMenu.light .pm-dropDown a {
+                background: rgba(0, 0, 0, 0.5);
+                padding: 0 10px;
+            }
+
+            .pgwMenu.light li a:hover {
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .pgwMenu.light a {
+                padding: 0 25px;
+            }
+
+            .pgwMenu.light .pm-links.mobile, .pgwMenu.pgwMenu.light .pm-viewMore > ul {
+                background: rgba(255, 255, 255, 0.5);
+            }
+
+            .pgwMenu.light .pm-dropDown a.active, .pgwMenu.pgwMenu.light .pm-viewMore a.active {
+                background: rgba(255, 255, 255, 0.5);
+            }
+			
+			.pgwMenu.light .pm-links .active a{
+				background: rgba(0, 0, 0, 0.5);
+				color:#eee;
+			}

@@ -1,0 +1,86 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loyal2Love</title>
+    <link rel="stylesheet" href="../assets/css/pgwmenu.css">
+    <link rel="stylesheet" href="../assets/css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+	<link rel="stylesheet" href="../assets/css/mymenu.css">
+    <script src="../assets/js/jquery-1.8.3.min.js"></script>
+    <script src="../assets/js/pgwmenu.js"></script>
+    <script src="../assets/js/jquery.pagepiling.js"></script>
+    <script src="../assets/js/wow.js"></script>
+    <style>
+        h1 {
+            padding: 30px 0;
+            font: 32px "Microsoft Yahei";
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 50px;
+            font: 24px "Microsoft Yahei";
+        }
+
+        body {
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+            font-family: 'Microsoft YaHei';
+        }
+
+       #pp-nav span, .pp-slidesNav span{
+			width:5px;
+			height:5px;
+			border:3px solid #fff;
+	   }
+    </style>
+</head>
+
+<body>
+    <ul class="pgwMenu" id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+        <li data-menuanchor="page2"><a href="#page2">代码</a></li>
+        <li data-menuanchor="page3"><a href="#page3">素材</a></li>
+        <li data-menuanchor="page4"><a href="#page4">模板</a></li>
+
+        <li data-menuanchor="page5"><a href="#page5">关于</a></li>
+        <li data-menuanchor="page6"><a href="#page6">服务</a></li>
+        <li data-menuanchor="page7"><a href="#page7">联系</a></li>
+    </ul>
+
+
+    <div id="dowebok">
+        <div class="section" style="background:url(../assets/img/bg1.jpg);background-size: cover;"><h3>第一屏</h3></div>
+        <div class="section" style="background:url(../assets/img/bg2.jpg);background-size: cover;"><h3>第二屏</h3></div>
+        <div class="section" style="background:url(../assets/img/bg3.jpg);background-size: cover;"><h3>第三屏</h3></div>
+        <div class="section" style="background:url(../assets/img/bg4.jpg);background-size: cover;"><h3>第四屏</h3></div>
+        <div class="section"><h3>第五屏</h3></div>
+        <div class="section"><h3>第六屏</h3></div>
+        <div class="section"><h3>第七屏</h3></div>
+    </div>
+
+    <script>
+        $('.pgwMenu').pgwMenu({
+			viewMoreMaxWidth:200,
+            viewMoreLabel: '更多<span class="icon"></span>'
+        });
+
+        $('#dowebok').pagepiling({
+			direction: 'horizontal',
+            sectionsColor: ['', '', '', '#00d8cc', '#00c13f', '#ff7d23', '#ff1d77'],
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+            menu: '#menu',
+            navigation: {
+                textColor: '#f00',
+                bulletsColor: '#eee',
+                position: 'right'
+            }
+        });
+    </script>
+
+</body>
+</html>
